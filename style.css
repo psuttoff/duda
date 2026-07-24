@@ -1,0 +1,344 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 10%;
+
+    position:fixed;
+    top:0;
+
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+    z-index:999;
+
+}
+
+.logo h2{
+
+    color:#2563eb;
+
+}
+
+nav{
+
+    display:flex;
+    gap:35px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+    color:#334155;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#2563eb;
+
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:120px 10%;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:55px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+    color:#64748b;
+
+    margin-bottom:35px;
+
+}
+
+.hero-text a{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+.hero-text a:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:420px;
+
+    max-width:100%;
+
+    border-radius:25px;
+
+    box-shadow:0 30px 70px rgba(0,0,0,.15);
+
+}
+
+/* ---------------- SEÇÕES ---------------- */
+
+section{
+
+    padding:120px 10%;
+
+}
+
+section h2{
+
+    font-size:38px;
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+    color:#1e293b;
+
+}
+
+/* ---------------- CARDS ---------------- */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.1);
+
+}
+
+.card h3{
+
+    color:#2563eb;
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#64748b;
+
+    line-height:1.7;
+
+}
+
+/* ---------------- LISTA ---------------- */
+
+ul{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+ul li{
+
+    margin:20px 0;
+
+    font-size:18px;
+
+}
+
+/* ---------------- CONTATO ---------------- */
+
+#contato{
+
+    text-align:center;
+
+}
+
+#contato p{
+
+    margin:15px 0;
+
+    font-size:18px;
+
+}
+
+#contato a{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 40px;
+
+    background:#22c55e;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+
+}
+
+#contato a:hover{
+
+    background:#16a34a;
+
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer{
+
+    padding:40px;
+
+    text-align:center;
+
+    background:#e2e8f0;
+
+}
+
+/* ---------------- RESPONSIVO ---------------- */
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+.hero-text h1{
+
+    font-size:40px;
+
+}
+
+header{
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+nav{
+
+    margin-top:15px;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+}
