@@ -8,6 +8,10 @@ html{
     scroll-behavior:smooth;
 }
 
+h4{
+    text-align: center;
+}
+
 body{
 
     font-family:'Poppins',sans-serif;
